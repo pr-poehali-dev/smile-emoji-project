@@ -84,11 +84,29 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'bounce-emoji': {
+					'0%, 100%': { transform: 'scale(1) rotate(0deg)' },
+					'25%': { transform: 'scale(1.2) rotate(-5deg)' },
+					'50%': { transform: 'scale(1.3) rotate(5deg)' },
+					'75%': { transform: 'scale(1.2) rotate(-5deg)' }
+				},
+				'wiggle': {
+					'0%, 100%': { transform: 'rotate(0deg)' },
+					'25%': { transform: 'rotate(-15deg)' },
+					'75%': { transform: 'rotate(15deg)' }
+				},
+				'pulse-text': {
+					'0%, 100%': { opacity: '1', transform: 'scale(1)' },
+					'50%': { opacity: '0.8', transform: 'scale(1.05)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'bounce-emoji': 'bounce-emoji 1.5s ease-in-out infinite',
+				'wiggle': 'wiggle 1s ease-in-out infinite',
+				'pulse-text': 'pulse-text 2s ease-in-out infinite'
 			}
 		}
 	},
